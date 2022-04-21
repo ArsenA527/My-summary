@@ -4,10 +4,24 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+}
+
+a:hover {
+  color: orange;
+}
+
 body {
   background-color: #f5f7fa;
   padding: 40px 20px;
   font-family: Montserrat;
+}
+
+.block {
+  display: block;
 }
 
 .wrapper {
@@ -19,10 +33,10 @@ body {
 }
 
 aside {
-  width: 500px;
+  width: 60%;
   background-color: #1e2939;
   color: white;
-  padding: 40px 0;
+  padding: 0 0 20px;
 }
 
 aside img {
@@ -44,6 +58,38 @@ aside img {
   margin-bottom: 20px;
 }
 
+.contacts__title {
+  margin-bottom: 10px;
+}
+
+.messagers__title {
+  margin-bottom: 15px;
+}
+
+.messagers-item {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.messagers-icon {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity .3s ease-in-out;
+}
+
+.messagers-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.messagers-item:hover .messagers-icon {
+  opacity: .5;
+}
+
+
 .contacts__container span {
   font-size: 14px;
   font-weight: 700;
@@ -52,7 +98,7 @@ aside img {
 }
 
 .contacts__container div a {
-  color: #878d95;
+  color: #ff6b08;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -60,6 +106,12 @@ aside img {
 
 .contacts__container div.tel a {
   text-decoration: none;
+  color: #ff6b08;
+}
+
+.contacts__container div a:hover,
+.contacts__container div.tel a:hover {
+  color: orange;
 }
 
 .item {
@@ -75,7 +127,7 @@ aside img {
 }
 
 .about-container {
-  padding: 110px 90px;
+  padding: 50px 90px;
 }
 
 .about-container li {
@@ -87,14 +139,14 @@ aside img {
 }
 
 .proffesion__title {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
 .name {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 89px;
 }
@@ -190,6 +242,39 @@ aside img {
 
 .education-item__time b {
   color: #000;
+}
+
+.achievement-item__subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.achievement-item__subtitle span {
+  color: #ff761b;
+}
+
+.achievement-item__desc {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.achievement-item__time {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.achievement-item__link {
+  text-decoration: none;
+  color: #ff761b;
+}
+
+.achievement-item__link:hover {
+  color: orange;
 }
 
 @media (max-width: 992px) {
